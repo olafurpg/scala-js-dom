@@ -23,7 +23,7 @@ import scala.scalajs.js
  *  An AudioContext can be a target of events, therefore it implements the
  *  EventTarget interface.
  */
-@js.native
+@js.native @JSGlobal
 class AudioContext extends EventTarget {
 
   /** Returns a double representing an ever-increasing hardware time in
@@ -246,7 +246,7 @@ class AudioContext extends EventTarget {
  *                       least the range 22050 to 96000, with 44100 being the
  *                       most commonly used.
  */
-@js.native
+@js.native @JSGlobal
 class OfflineAudioContext(numOfChannels: Int, length: Int, sampleRate: Int)
     extends AudioContext {
 

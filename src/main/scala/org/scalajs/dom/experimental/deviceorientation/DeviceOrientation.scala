@@ -5,7 +5,7 @@ import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.ScalaJSDefined
 
-@js.native
+@js.native @JSGlobal
 class DeviceOrientationEvent(
     `type`: String,
     eventInitDict: DeviceOrientationEventInit
@@ -83,7 +83,7 @@ trait DeviceRotationRate extends js.Any {
   val gamma: Double
 }
 
-@js.native
+@js.native @JSGlobal
 class DeviceMotionEvent extends dom.Event {
 
   /** Device acceleration with gravity removed. */

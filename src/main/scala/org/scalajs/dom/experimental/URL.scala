@@ -8,7 +8,7 @@ import scala.scalajs.js
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class URL(url: String, base: String = js.native) extends js.Object {
 
   /**

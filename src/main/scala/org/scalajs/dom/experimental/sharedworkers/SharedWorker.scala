@@ -27,7 +27,7 @@ import scala.scalajs.js
  *             SharedWorkerGlobalScope will be used as the scope for this
  *             shared worker.
  */
-@js.native
+@js.native @JSGlobal
 class SharedWorker(stringUrl: String, name: js.UndefOr[String] = js.native)
     extends webworkers.AbstractWorker {
 

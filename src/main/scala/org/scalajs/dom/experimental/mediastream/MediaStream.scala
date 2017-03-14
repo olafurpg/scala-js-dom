@@ -15,7 +15,7 @@ import scala.scalajs.js.|
  * MDN
  *
  */
-@js.native
+@js.native @JSGlobal
 class MediaStream() extends EventTarget {
 
   /**
@@ -478,7 +478,7 @@ object MediaStreamTrackEventInit {
   }
 }
 
-@js.native
+@js.native @JSGlobal
 class MediaStreamTrackEvent(`type`: String,
     eventInitDict: MediaStreamTrackEventInit)
     extends Event {

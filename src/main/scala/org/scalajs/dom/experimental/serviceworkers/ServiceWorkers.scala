@@ -84,7 +84,7 @@ trait CanvasProxy extends js.Any {
  * [[https://slightlyoff.github.io/ServiceWorker/spec/service_worker_1/#fetch-event-section ¶4.5 FetchEvent]]
  * on whatwg ServiceWorker spec.
  */
-@js.native
+@js.native @JSGlobal
 class FetchEvent extends Event {
 
   /**
@@ -350,7 +350,7 @@ trait ServiceWorkerContainer extends EventTarget {
  * An ExtendableEvent object has an associated extend lifetime promises (an
  * array of promises). It is initially set to null.
  */
-@js.native
+@js.native @JSGlobal
 class ExtendableEvent extends Event {
   def waitUntil(promise: js.Promise[Any]): Unit = js.native
 }
@@ -374,7 +374,7 @@ trait ExtendableMessageEventInit extends js.Object {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class ExtendableMessageEvent(`type`: String,
     eventInitDict: ExtendableMessageEventInit)
     extends ExtendableEvent {
@@ -428,7 +428,7 @@ trait ServiceWorkerMessageEventInit extends js.Object {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class ServiceWorkerMessageEvent(`type`: String,
     eventInitDict: ServiceWorkerMessageEventInit = js.native)
     extends Event {
@@ -596,7 +596,7 @@ trait Clients extends js.Object {
  * See [[https://slightlyoff.github.io/ServiceWorker/spec/service_worker_1/#cache ¶5.4 cache]]
  * of ServiceWorker whatwg spec.
  */
-@js.native
+@js.native @JSGlobal
 abstract class Cache extends js.Object {
   def `match`(request: RequestInfo,
       options: js.UndefOr[

@@ -12,7 +12,7 @@ import scala.scalajs.js.typedarray._
 /**
  * Contains drawing surface attributes.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLContextAttributes extends js.Object {
 
   /**
@@ -51,49 +51,49 @@ class WebGLContextAttributes extends js.Object {
 /**
  * An opaque type representing a WebGL buffer.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLBuffer private () extends js.Object
 
 /**
  * An opaque type representing a WebGL framebuffer.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLFramebuffer private () extends js.Object
 
 /**
  * An opaque type representing a WebGL program.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLProgram private () extends js.Object
 
 /**
  * An opaque type representing a WebGL renderbuffer.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLRenderbuffer private () extends js.Object
 
 /**
  * An opaque type representing a WebGL shader.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLShader private () extends js.Object
 
 /**
  * An opaque type representing a WebGL texture.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLTexture private () extends js.Object
 
 /**
  * An opaque type representing a WebGL uniform location.
  */
-@js.native
+@js.native @JSGlobal
 class WebGLUniformLocation private () extends js.Object
 
 /**
  * Holds information returned by [[WebGLRenderingContext#getActiveAttrib]] and [[WebGLRenderingContext#getActiveUniform]].
  */
-@js.native
+@js.native @JSGlobal
 class WebGLActiveInfo private () extends js.Object {
 
   /**
@@ -115,7 +115,7 @@ class WebGLActiveInfo private () extends js.Object {
 /**
  * Represents information about the implementation's precision for given parameters.  See [[WebGLRenderingContext#getShaderPrecisionFormat]].
  */
-@js.native
+@js.native @JSGlobal
 class WebGLShaderPrecisionFormat private () extends js.Object {
 
   /**
@@ -847,7 +847,7 @@ object WebGLRenderingContext {
   final val BROWSER_DEFAULT_WEBGL = 0x9244
 }
 
-@js.native
+@js.native @JSGlobal
 class WebGLRenderingContext extends js.Object {
 
   /**

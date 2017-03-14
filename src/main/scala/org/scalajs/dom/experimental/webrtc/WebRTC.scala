@@ -259,7 +259,7 @@ object RTCSessionDescriptionInit {
   }
 }
 
-@js.native
+@js.native @JSGlobal
 class RTCSessionDescription(
     descriptionInitDict: js.UndefOr[RTCSessionDescriptionInit] = js.undefined)
     extends js.Object {
@@ -308,7 +308,7 @@ object RTCIceCandidateInit {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class RTCIceCandidate(candidateInitDict: RTCIceCandidateInit)
     extends js.Object {
 
@@ -492,7 +492,7 @@ trait RTCDataChannelInit extends js.Object {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class RTCDataChannelEvent protected () extends Event {
   def this(eventInitDict: RTCDataChannelEventInit) = this()
 
@@ -652,7 +652,7 @@ object RTCPeerConnectionIceEventInit {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class RTCPeerConnectionIceEvent(`type`: String,
     eventInitDict: RTCPeerConnectionIceEventInit)
     extends Event {
@@ -776,7 +776,7 @@ object RTCIceGatheringState {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class MediaStreamEvent(`type`: String, ms: js.Dictionary[js.Any])
     extends Event {
   val stream: MediaStream = js.native
@@ -789,7 +789,7 @@ class MediaStreamEvent(`type`: String, ms: js.Dictionary[js.Any])
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class RTCPeerConnection(
     configuration: js.UndefOr[RTCConfiguration] = js.undefined)
     extends EventTarget {

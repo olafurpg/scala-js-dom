@@ -10,7 +10,7 @@ import org.scalajs.dom.raw.{Document, HTMLDocument}
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class DOMParser extends js.Object {
 
   /**

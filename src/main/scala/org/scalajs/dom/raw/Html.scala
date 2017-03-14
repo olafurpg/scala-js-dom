@@ -11,7 +11,7 @@ package org.scalajs.dom.raw
 
 import scala.scalajs.js
 
-@js.native
+@js.native @JSGlobal
 abstract class HTMLDocument extends Document {
 
   /**
@@ -554,7 +554,7 @@ abstract class HTMLDocument extends Document {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableElement extends HTMLElement {
 
   /**
@@ -775,7 +775,7 @@ abstract class HTMLTableElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableDataCellElement extends HTMLTableCellElement
 
 /**
@@ -785,7 +785,7 @@ abstract class HTMLTableDataCellElement extends HTMLTableCellElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLBaseElement extends HTMLElement {
 
   /**
@@ -819,7 +819,7 @@ trait HTMLNextIdElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLParagraphElement extends HTMLElement {
 
   /**
@@ -840,7 +840,7 @@ trait HTMLAreasCollection extends HTMLCollection {
   def add(element: HTMLElement, before: js.Any = js.native): Unit = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 5")
 abstract class HTMLAppletElement extends HTMLElement {
   var width: Double = js.native
@@ -871,7 +871,7 @@ abstract class HTMLAppletElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLOListElement extends HTMLElement {
 
   /**
@@ -890,7 +890,7 @@ abstract class HTMLOListElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLSelectElement extends HTMLElement {
 
   /**
@@ -1051,7 +1051,7 @@ trait HTMLBlockElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLMetaElement extends HTMLElement {
 
   /**
@@ -1086,7 +1086,7 @@ abstract class HTMLMetaElement extends HTMLElement {
   var charset: String = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 abstract class HTMLDDElement extends HTMLElement {
   var noWrap: Boolean = js.native
 }
@@ -1099,7 +1099,7 @@ abstract class HTMLDDElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLLinkElement extends HTMLElement with LinkStyle {
 
   /**
@@ -1156,7 +1156,7 @@ abstract class HTMLLinkElement extends HTMLElement with LinkStyle {
   var hreflang: String = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 4.01")
 abstract class HTMLFontElement extends HTMLElement {
   var face: String = js.native
@@ -1169,7 +1169,7 @@ abstract class HTMLFontElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableCaptionElement extends HTMLElement {
 
   /**
@@ -1191,7 +1191,7 @@ abstract class HTMLTableCaptionElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLOptionElement extends HTMLElement {
 
   /**
@@ -1270,7 +1270,7 @@ abstract class HTMLOptionElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLMapElement extends HTMLElement {
 
   /**
@@ -1290,7 +1290,7 @@ abstract class HTMLMapElement extends HTMLElement {
   def areas: HTMLAreasCollection = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 abstract class HTMLMenuElement extends HTMLElement {
   var `type`: String = js.native
 }
@@ -1301,7 +1301,7 @@ abstract class HTMLMenuElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLCollection extends DOMList[Element] {
 
   /**
@@ -1332,7 +1332,7 @@ abstract class HTMLCollection extends DOMList[Element] {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLImageElement extends HTMLElement {
 
   /**
@@ -1454,7 +1454,7 @@ abstract class HTMLImageElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLAreaElement extends HTMLElement {
 
   /**
@@ -1566,7 +1566,7 @@ abstract class HTMLAreaElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLButtonElement extends HTMLElement {
 
   /**
@@ -1686,7 +1686,7 @@ abstract class HTMLButtonElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLSourceElement extends HTMLElement {
 
   /**
@@ -1714,7 +1714,7 @@ abstract class HTMLSourceElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLScriptElement extends HTMLElement {
   var defer: Boolean = js.native
 
@@ -1785,7 +1785,7 @@ abstract class HTMLScriptElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableRowElement
     extends HTMLElement with HTMLTableAlignment {
 
@@ -1854,7 +1854,7 @@ abstract class HTMLTableRowElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLHtmlElement extends HTMLElement {
 
   /**
@@ -1867,7 +1867,7 @@ abstract class HTMLHtmlElement extends HTMLElement {
   var version: String = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 5")
 abstract class HTMLFrameElement extends HTMLElement with GetSVGDocument {
   var width: js.Any = js.native
@@ -1897,7 +1897,7 @@ abstract class HTMLFrameElement extends HTMLElement with GetSVGDocument {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLQuoteElement extends HTMLElement {
   var dateTime: String = js.native
 
@@ -1917,7 +1917,7 @@ abstract class HTMLQuoteElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableHeaderCellElement extends HTMLTableCellElement
 
 /**
@@ -1927,10 +1927,10 @@ abstract class HTMLTableHeaderCellElement extends HTMLTableCellElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLDListElement extends HTMLElement
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 5")
 abstract class HTMLFrameSetElement extends HTMLElement {
   var ononline: js.Function1[Event, _] = js.native
@@ -1960,7 +1960,7 @@ abstract class HTMLFrameSetElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLLabelElement extends HTMLElement {
 
   /**
@@ -1980,14 +1980,14 @@ abstract class HTMLLabelElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLLegendElement extends HTMLElement {
   var align: String = js.native
 
   def form: HTMLFormElement = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 4")
 abstract class HTMLDirectoryElement extends HTMLElement
 
@@ -1998,7 +1998,7 @@ abstract class HTMLDirectoryElement extends HTMLElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLLIElement extends HTMLElement {
 
   /**
@@ -2019,7 +2019,7 @@ abstract class HTMLLIElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLIFrameElement extends HTMLElement with GetSVGDocument {
 
   /**
@@ -2092,7 +2092,7 @@ abstract class HTMLIFrameElement extends HTMLElement with GetSVGDocument {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLBodyElement extends HTMLElement {
   var scroll: String = js.native
 
@@ -2230,7 +2230,7 @@ abstract class HTMLBodyElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableSectionElement
     extends HTMLElement with HTMLTableAlignment {
 
@@ -2275,7 +2275,7 @@ abstract class HTMLTableSectionElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLInputElement extends HTMLElement {
 
   /**
@@ -2677,7 +2677,7 @@ abstract class HTMLInputElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLAnchorElement extends HTMLElement {
 
   /**
@@ -2823,7 +2823,7 @@ abstract class HTMLAnchorElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLParamElement extends HTMLElement {
 
   /**
@@ -2868,7 +2868,7 @@ abstract class HTMLParamElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLPreElement extends HTMLElement {
 
   /**
@@ -2881,7 +2881,7 @@ abstract class HTMLPreElement extends HTMLElement {
   var width: Int = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 abstract class HTMLPhraseElement extends HTMLElement {
   var dateTime: String = js.native
 }
@@ -2894,7 +2894,7 @@ abstract class HTMLPhraseElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLCanvasElement extends HTMLElement {
 
   /**
@@ -2946,7 +2946,7 @@ abstract class HTMLCanvasElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTitleElement extends HTMLElement {
 
   /**
@@ -2963,7 +2963,7 @@ abstract class HTMLTitleElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLStyleElement extends HTMLElement with LinkStyle {
 
   /**
@@ -2989,7 +2989,7 @@ abstract class HTMLStyleElement extends HTMLElement with LinkStyle {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLUnknownElement extends HTMLElement
 
 /**
@@ -2999,7 +2999,7 @@ abstract class HTMLUnknownElement extends HTMLElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLAudioElement extends HTMLMediaElement
 
 /**
@@ -3010,7 +3010,7 @@ abstract class HTMLAudioElement extends HTMLMediaElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableCellElement
     extends HTMLElement with HTMLTableAlignment {
 
@@ -3100,7 +3100,7 @@ abstract class HTMLTableCellElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "DOM Level 2")
 abstract class HTMLBaseFontElement extends HTMLElement {
 
@@ -3132,7 +3132,7 @@ abstract class HTMLBaseFontElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTextAreaElement extends HTMLElement {
 
   /**
@@ -3332,7 +3332,7 @@ abstract class HTMLTextAreaElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLModElement extends HTMLElement {
   var dateTime: String = js.native
 
@@ -3352,7 +3352,7 @@ abstract class HTMLModElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTableColElement
     extends HTMLElement with HTMLTableAlignment {
 
@@ -3393,7 +3393,7 @@ trait HTMLTableAlignment extends js.Object {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLUListElement extends HTMLElement
 
 /**
@@ -3403,7 +3403,7 @@ abstract class HTMLUListElement extends HTMLElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLDivElement extends HTMLElement {
 
   /**
@@ -3423,7 +3423,7 @@ abstract class HTMLDivElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLBRElement extends HTMLElement {
 
   /**
@@ -3442,7 +3442,7 @@ abstract class HTMLBRElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLMediaElement extends HTMLElement {
 
   /**
@@ -3659,7 +3659,7 @@ abstract class HTMLMediaElement extends HTMLElement {
   def audioTracks: AudioTrackList = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 object HTMLMediaElement extends js.Object {
   /* ??? ConstructorMember(FunSignature(List(),List(),Some(TypeRef(TypeName(HTMLMediaElement),List())))) */
   /**
@@ -3713,7 +3713,7 @@ object HTMLMediaElement extends js.Object {
   val HAVE_FUTURE_DATA: Int = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 abstract class HTMLDTElement extends HTMLElement {
   var noWrap: Boolean = js.native
 }
@@ -3725,7 +3725,7 @@ abstract class HTMLDTElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLFieldSetElement extends HTMLElement {
 
   @deprecated("Obsolete.", "HTML 5")
@@ -3791,7 +3791,7 @@ abstract class HTMLFieldSetElement extends HTMLElement {
   def setCustomValidity(error: String): Unit = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Non standard.", "forever")
 abstract class HTMLBGSoundElement extends HTMLElement {
   var balance: js.Any = js.native
@@ -3806,7 +3806,7 @@ abstract class HTMLBGSoundElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLElement extends Element {
   var onblur: js.Function1[FocusEvent, _] = js.native
   var onfocus: js.Function1[FocusEvent, _] = js.native
@@ -4065,7 +4065,7 @@ abstract class HTMLElement extends Element {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLHRElement extends HTMLElement {
   @deprecated("Obsolete.", "HTML 5")
   var width: Double = js.native
@@ -4088,7 +4088,7 @@ abstract class HTMLHRElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLObjectElement extends HTMLElement with GetSVGDocument {
 
   /**
@@ -4253,7 +4253,7 @@ abstract class HTMLObjectElement extends HTMLElement with GetSVGDocument {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLEmbedElement extends HTMLElement with GetSVGDocument {
 
   /**
@@ -4288,7 +4288,7 @@ abstract class HTMLEmbedElement extends HTMLElement with GetSVGDocument {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLOptGroupElement extends HTMLElement {
 
   /**
@@ -4313,7 +4313,7 @@ abstract class HTMLOptGroupElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 4.01")
 abstract class HTMLIsIndexElement extends HTMLElement {
 
@@ -4341,7 +4341,7 @@ abstract class HTMLIsIndexElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLVideoElement extends HTMLMediaElement {
 
   /**
@@ -4397,7 +4397,7 @@ abstract class HTMLVideoElement extends HTMLMediaElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLProgressElement extends HTMLElement {
 
   /**
@@ -4434,7 +4434,7 @@ abstract class HTMLProgressElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLDataListElement extends HTMLElement {
 
   /**
@@ -4451,7 +4451,7 @@ abstract class HTMLDataListElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLTrackElement extends HTMLElement {
   var kind: String = js.native
   var src: String = js.native
@@ -4460,7 +4460,7 @@ abstract class HTMLTrackElement extends HTMLElement {
   var label: String = js.native
 }
 
-@js.native
+@js.native @JSGlobal
 @deprecated("Obsolete.", "HTML 5")
 abstract class HTMLMarqueeElement extends HTMLElement {
   var width: String = js.native
@@ -4489,7 +4489,7 @@ abstract class HTMLMarqueeElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLSpanElement extends HTMLElement
 
 /**
@@ -4499,7 +4499,7 @@ abstract class HTMLSpanElement extends HTMLElement
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLHeadElement extends HTMLElement {
 
   /**
@@ -4517,7 +4517,7 @@ abstract class HTMLHeadElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLHeadingElement extends HTMLElement {
 
   /**
@@ -4536,7 +4536,7 @@ abstract class HTMLHeadingElement extends HTMLElement {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 abstract class HTMLFormElement extends HTMLElement {
 
   /**

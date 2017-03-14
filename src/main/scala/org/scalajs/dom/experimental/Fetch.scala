@@ -32,7 +32,7 @@ object Fetch extends js.Object {
  * @param input the url of the requested resource or an unused Request object.
  * @param init initialisation information
  */
-@js.native
+@js.native @JSGlobal
 class Request(input: RequestInfo, init: RequestInit = null) extends js.Object {
 
   /**
@@ -166,7 +166,7 @@ trait RequestInit extends js.Object {
  * @param content optional content
  * @param init optional response initialisiton
  */
-@js.native
+@js.native @JSGlobal
 class Response(content: BodyInit = null, init: ResponseInit = null)
     extends Body {
 
@@ -201,7 +201,7 @@ class Response(content: BodyInit = null, init: ResponseInit = null)
  * [[https://fetch.spec.whatwg.org/#response ¶6.4 Response class]] of
  * whatwg Fetch spec.
  */
-@js.native
+@js.native @JSGlobal
 object Response extends js.Object {
 
   /**
@@ -309,7 +309,7 @@ trait Body extends js.Object {
  *
  * MDN
  */
-@js.native
+@js.native @JSGlobal
 class Headers(map: HeadersInit = js.Array[js.Array[String]]())
     extends JSIterable[js.Array[ByteString]] {
 

@@ -252,7 +252,7 @@ trait ReadableStream[+T] extends js.Object {
  *
  * @tparam T Type of the Chunks returned by the Stream
  */
-@js.native
+@js.native @JSGlobal
 class ReadableStreamReader[+T](stream: ReadableStream[T]) extends js.Object {
 
   /**
@@ -320,7 +320,7 @@ class ReadableStreamReader[+T](stream: ReadableStream[T]) extends js.Object {
  * @tparam T Type of the Chunks to be enqueued to the Stream
 
  */
-@js.native
+@js.native @JSGlobal
 class ReadableStreamController[-T](stream: ReadableStream[T] = null)
     extends js.Object {
 

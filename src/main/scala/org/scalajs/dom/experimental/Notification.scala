@@ -180,7 +180,7 @@ object NotificationOptions {
  *
  * https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API
  */
-@js.native
+@js.native @JSGlobal
 object Notification extends js.Object {
 
   /**
@@ -215,7 +215,7 @@ object Notification extends js.Object {
  * @param options   The options to configure this notification
  * @return a new Notification
  */
-@JSName("Notification")
+@JSGlobal("Notification")
 @js.native
 class Notification(title: String, options: NotificationOptions = ???)
     extends EventTarget {
